@@ -119,13 +119,3 @@ def build_llm_prompt(question: str, rerank_results: list):
     return prompt
 
 
-if __name__ == '__main__':
-    question = 'AI'
-    rerank_results = search_api(question, 3)
-
-    prompt_ = build_llm_prompt(question, rerank_results)
-
-    pretty_json = json.dumps(prompt_, indent=4, ensure_ascii=False)
-
-    # 打印格式化后的 JSON
-    print(pretty_json)

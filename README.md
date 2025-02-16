@@ -267,3 +267,4 @@ def search_api(search_text: str = Query(..., description="搜索词"),
     return rerank_results
 
 ```
+其余部分，比如Redis相关配置，交互流式处理等其自行查看.......
